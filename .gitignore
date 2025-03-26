@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+runs/*
+*.egg-info
+*.egg
+*.dist-info
+*.dist
+*.egg
+__pycache__
+tmp/*
+data/*
