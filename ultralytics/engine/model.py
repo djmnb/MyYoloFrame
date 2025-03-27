@@ -768,8 +768,9 @@ class Model(torch.nn.Module):
             if any(kwargs):
                 LOGGER.warning("WARNING ⚠️ using HUB training arguments, ignoring local training arguments.")
             kwargs = self.session.train_args  # overwrite kwargs
-
-        checks.check_pip_update_available()
+            
+        # 不需要检测pip是不是最新
+        # checks.check_pip_update_available()
 
         overrides = yaml_load(checks.check_yaml(kwargs["cfg"])) if kwargs.get("cfg") else self.overrides
         custom = {

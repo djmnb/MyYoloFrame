@@ -126,3 +126,10 @@ cfg: # (str, optional) for overriding defaults.yaml
 
 # Tracker settings ------------------------------------------------------------------------------------------------------
 tracker: botsort.yaml # (str) tracker type, choices=[botsort.yaml, bytetrack.yaml]
+
+
+# 自定义dict参数, 里面能存放任何我们需要的参数
+custom_args_dict:
+  
+   
+
